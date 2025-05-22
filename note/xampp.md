@@ -77,7 +77,7 @@
 
 `$ssh 職前@localhost`
 
-### SSH 登入指令簡化設定
+### SSH 登入(指令輸入簡化設定)
 
 1. 建立 **cofig** 文件放置在 **users/職前/.ssh**
 
@@ -92,6 +92,8 @@ Port 22
 User qkauia
 ForwardX11 yes
 ```
+
+2. `$ssh aiot114a.test`
 
 ### SSH 登入(無需密碼)
 
@@ -121,12 +123,9 @@ ForwardX11 yes
 
 7. `ssh 職前@localhost`
 
-
 #### Vscode 套件 SFTP 資料上傳
 
-
 1. 下載套件 SFTP( 作者:Natizyskunk )
-
 
 ![20250522104842](https://raw.githubusercontent.com/qkauia-guy/pic/main/20250522104842.png)
 
