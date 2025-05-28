@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>表單</title>
+</head>
+<body>
+  <h1>歡迎進入民調系統</h1>
+  <p>請留個人資料</p>
+  <!-- checked 預設值 autofocus 起始指向輸入  -->
+  <form action="http://aiot114a.test" method="post">
+    <!-- label for 要對應 id -->
+    <label for="name">
+      <p>姓名:<input type="text" name="user" id="name"></p>
+    </label>
+    <!-- value 可以預先設定使用者輸入內容 -->
+    <p>地址:<input type="text" name="address" value="台灣"></p>
+    <!-- placehoder 灰字顯示 -->
+    <p>電話:<input type="tel" name="phone" placeholder="0900-000-001" ></p>
+    <p>郵件:<input type="email" name="mail" placeholder="abcd@gmail.com" ></p>
+    <p>個人網址</p>
+    <p>URL網址:<input type="url" name="myurl" value="http://"></p>
+    <p>
+      性別: <br>
+      <input type="radio" name="sex" value="男" checked>男
+      <br>
+      <input type="radio" name="sex" value="女">女
+    </p>
+    <p>
+      年齡調查:<br>
+      <input type="radio" name="age" value="20">小於20歲<br>
+      <input type="radio" name="age" value="40" checked>20~40歲<br>
+      <input type="radio" name="age" value="60">41~60歲<br>
+      <input type="radio" name="age" value="70">大於60歲<br>
+    </p>
+    <p>
+      意見調查:<br>
+      <textarea name="suggest" rows="5" cols="40"></textarea>
+    </p>
+    <p>
+      <input type="submit" value="送出">
+      <input type="reset" value="重設">
+    </p>
+  </form>
+</body>
+</html>

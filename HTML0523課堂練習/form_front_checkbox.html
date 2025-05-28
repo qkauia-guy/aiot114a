@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>表單</title>
+</head>
+<body>
+  <h1>歡迎進入專長調查表</h1>
+  <p>請留個人資料</p>
+  <!-- checked 預設值 autofocus 起始指向輸入  -->
+  <form action="http://aiot114a.test" method="post">
+    <!-- label for 要對應 id -->
+    <label for="name">
+      <p>姓名:<input type="text" name="user" id="name"></p>
+    </label>
+    <p>
+      性別: <br>
+      <input type="radio" name="sex" value="男" checked>男
+      <br>
+      <input type="radio" name="sex" value="女">女
+    </p>
+    <p>
+      專長能力分析資料:<br>
+      <input type="checkbox" name="expert" value="HTML">HTML<br>
+      <input type="checkbox" name="expert" value="CSS" checked>CSS<br>
+      <input type="checkbox" name="expert" value="JS">JS<br>
+      <input type="checkbox" name="expert" value="REACYT">REACYT<br>
+      <input type="checkbox" name="expert" value="PYTHON">PYTHON<br>
+    </p>
+    <p>
+      <input type="submit" value="送出">
+      <input type="reset" value="重設">
+    </p>
+  </form>
+</body>
+</html>

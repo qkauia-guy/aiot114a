@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>個人小檔案</title>
+</head>
+<body bgcolor="#d1fce8">
+  <center>
+    <img src="https://api.fnkr.net/testimg/350x50/00CED1/FFF/?text=User Interest" alt="">
+  </center>
+  <form action="http://aiot114a.test/0522/form_backend.php" method="post">
+    <fieldset>
+      <legend>個人資訊</legend>
+      姓&nbsp;&nbsp;&nbsp;&nbsp;名:
+      <input type="text" name="username" size="20"><br>
+      姓&nbsp;&nbsp;&nbsp;&nbsp;別:
+      <input type="radio" name="usersex" value="male">男
+      <input type="radio" name="usersex" value="female">女<br>
+      最高學歷:
+      <select name="userschool">
+        <option value="高中以下">高中以下</option>
+        <option value="大專院校">大專院校</option>
+        <option value="碩士">碩士</option>
+        <option value="博士">博士</option>
+        <option value="其他">其他</option>
+      </select><br>
+    </fieldset>
+    <fieldset>
+      <legend>其他資訊</legend>
+      您喜歡下列哪些活動(可複選) ?
+      <input type="checkbox" name="userinterest[]" value="閱讀">閱讀
+      <input type="checkbox" name="userinterest[]" value="打球">打球
+      <input type="checkbox" name="userinterest[]" value="逛街">逛街
+      <input type="checkbox" name="userinterest[]" value="聽音樂">聽音樂
+      <input type="checkbox" name="userinterest[]" value="水上活動">水上活動
+      <input type="checkbox" name="userinterest[]" value="旅行">旅行<br>
+      您對於使用臉書經營社群有何看法?<br>
+      <textarea name="userthought" cols="45" rows="4"></textarea><br>
+    </fieldset>
+    <input type="submit" value="傳送資料">
+    <input type="reset" value="清除資料">
+  </form>
+</body>
+</html>
