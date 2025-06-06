@@ -1,0 +1,159 @@
+body{/*頁面*/
+	margin: 0;/*清除頁面外距*/
+}
+header p{/*語意標籤header底下的段落標籤*/
+	text-align: right;/*內容靠右對齊*/
+}
+header p img{/*語意標籤header底下的段落標籤底下的影像*/
+	width: 50px;/*寬度*/
+	margin-right: 20px;/*右外距*/
+}
+header h3{/*語意標籤header底下的h3標籤*/
+	font-size: 20px;/*文字大小*/
+	width: 700px;
+	margin: 50px auto;
+}
+header h1{/*語意標籤header底下的h1標籤*/
+	font-size: 42px;/*文字大小*/
+	letter-spacing: 1px;/*字距*/
+	width: 700px;
+	margin: 50px auto;
+}
+header h5{/*語意標籤header底下的h5標籤*/
+	color: darkgray;/*文字色彩*/
+	letter-spacing: 2px;/*字距*/
+	width: 700px;
+	margin: 50px auto;
+}
+section{/*語意標籤section*/
+	text-align: center;/*內容水平置中對齊*/
+	width: 680px;
+	margin: 50px auto;
+}
+section img{/*語意標籤section底下的img標籤**/
+	width: 200px;/*寬度*/
+	margin: 10px;
+}
+div{/*區塊標籤*/
+	width: 46.6%;/*寬度*/
+	display: inline-block;/*以水平區塊方式呈現*/
+	vertical-align: top;/*內容垂直靠上*/
+	padding: 0 2%;/*內距*/
+	box-sizing: border-box;
+}
+div img{/*區塊標籤裡面的影像*/
+	width: 40px;/*寬度*/
+}
+
+div form *{/*區塊標籤裡面的表單所有項目*/
+	display: block;/*顯示成區塊型態*/
+	width: 90%;/*寬度*/
+	height: 30px;/*高度*/
+	margin: 10px 0;/*上下外距10px 左右為0 */
+}
+.info{/*class代號為info的HTML標籤*/
+	width: 44.5%;/*寬度*/
+	display: inline-block;/*水平區塊方式呈現*/
+}
+div form textarea{/*div區塊標籤底下的表單多行文字欄位*/
+	resize: none;/*取消調整尺寸功能*/
+}
+#btn{/*id代號為btn的HTML標籤*/
+	width: 120px;/*寬度*/
+	height: 40px;/*高度*/
+}
+footer{/*語意標籤footer*/
+	height: 100px;/*高度*/
+	line-height: 100px;/*行高*/
+	letter-spacing: 2px;/*字距*/
+	text-align: center;/*內容水平置中對齊*/
+}
+#footerArea{
+	width:100%;
+	background:lightgray;
+}
+#footerArea div:nth-child(2){
+	text-align:right;
+}
+/*平板裝置時 將影像顯示成兩欄*/
+@media screen and (min-width:768px) and (max-width: 1024px){
+	header h3{/*語意標籤header底下的h3標籤*/
+		width: 95%;
+	}
+	header h1{/*語意標籤header底下的h1標籤*/
+		letter-spacing: 0px;
+		width: 95%;
+	}
+	header h5{/*語意標籤header底下的h5標籤*/
+		letter-spacing: 1px;/*字距*/
+		width: 95%;
+	}
+	section{/*語意標籤section*/
+		width: 100%;
+	}
+	section img{/*語意標籤section底下的img標籤**/
+		width: 46%;/*寬度*/
+	}
+	div{/*區塊標籤*/
+		width: 45.6%;/*寬度*/
+		display: inline-block;/*以水平區塊方式呈現*/
+		vertical-align: top;/*內容垂直靠上*/
+		padding: 0 2%;/*內距*/
+	}
+	div img{/*區塊標籤裡面的影像*/
+		width: 40px;/*寬度*/
+	}
+	section{/*語意標籤section*/
+		width: 95%;
+	}
+	section img{/*區塊標籤裡面的影像*/
+		width:46%;/*寬度*/
+	}
+}
+
+
+/*手機行動裝置時 將影像與下方2個div都設定成垂直單一區塊呈現*/
+@media screen and (max-width:767px){
+	header h3{/*語意標籤header底下的h3標籤*/
+		font-size: 16px;/*文字大小*/
+		width: 95%;
+		margin:0 auto;
+	}
+	header h1{/*語意標籤header底下的h1標籤*/
+		font-size: 30px;/*文字大小*/
+		letter-spacing: 0px;/*字距*/
+		width: 95%;
+		margin:0 auto;
+	}
+	header h5{/*語意標籤header底下的h5標籤*/
+		color: darkgray;/*文字色彩*/
+		letter-spacing: 0px;/*字距*/
+		width: 95%;
+		margin:0 auto;
+	}
+	section{/*語意標籤section*/
+		width: 95%;
+		margin: 30px auto;
+	}
+	section img{/*區塊標籤裡面的影像*/
+		width:100%;/*寬度*/
+		margin: 0px;
+	}
+	div form *{
+		width: 100%;
+		display: block;
+		text-align: left;
+	}
+	div form textarea{
+		width:95%/*取消調整尺寸功能*/
+	}
+	div{
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+	#footerArea div:nth-child(2){
+		text-align:center;
+	}
+
+}
